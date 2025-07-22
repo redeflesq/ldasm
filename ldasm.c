@@ -248,7 +248,6 @@ size_t ldasm_size_of_proc(void* proc, const ldasm_tables* tables, bool is64)
 
 		opcode = (uint8_t*)proc + data.opcd_offset;
 		result += length;
-		printf("0x%X\n", *opcode);
 
 		if ((length == 1) && (*opcode == 0xCC))
 			break;
